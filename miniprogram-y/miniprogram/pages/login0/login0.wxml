@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+<image src="https://7069-pintu-game-52d2a-1301643624.tcb.qcloud.la/pintu_icon/login_bg.jpg"></image>
+</view>
+
+<image class="unlogimg" src="../index/user-unlogin.png" mode="center"></image>
+
+<button class="loginbutton" wx:if="{{canIUse}}" size='mini'
+open-type="getUserInfo" 
+bindgetuserinfo="bindGetUserInfo" type='primary'>授权登录</button>
+
+
+
